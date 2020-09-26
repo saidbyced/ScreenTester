@@ -8,15 +8,16 @@
 import SwiftUI
 
 class Content: ObservableObject {
-    @Published var colorNumber = 0
+    @Published var color = TestColor(.black)
     
-    var colorList = TestColor.Option.allCases
+    private var colorNumber = 0
+    private var colorList = TestColor.Option.allCases
     var actionSheetButtons: [ActionSheet.Button] {
         var buttons = [ActionSheet.Button]()
         for color in colorList {
             let colorName = color.rawValue.capitalized
             guard let colorNumber = colorList.firstIndex(of: color) else { fatalError() }
-            buttons.append(.default(Text(colorName)) { self.colorNumber = colorNumber })
+            buttons.append(.default(Text(colorName)) { self.selectColor(colorNumber) })
         }
         return buttons
     }
@@ -27,6 +28,11 @@ class Content: ObservableObject {
         } else {
             colorNumber += 1
         }
+        
+        color = TestColor(colorList[colorNumber])
+    }
+    
+    func selectColor(_ colorNumber: Int) {
+        color = TestColor(colorList[colorNumber])
     }
 }
-

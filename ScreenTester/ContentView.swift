@@ -12,7 +12,7 @@ struct ContentView: View {
     @ObservedObject var content = Content()
     
     var body: some View {
-        TestColor(content.colorList[content.colorNumber]).view
+        content.color.view
             .ignoresSafeArea()
             .onTapGesture(count: 1, perform: {
                 content.cycleColor()
