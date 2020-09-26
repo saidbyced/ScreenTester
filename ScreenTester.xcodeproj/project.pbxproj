@@ -11,6 +11,7 @@
 		AEA8F38F251F3F47006C6299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8F38E251F3F47006C6299 /* ContentView.swift */; };
 		AEA8F391251F3F4A006C6299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA8F390251F3F4A006C6299 /* Assets.xcassets */; };
 		AEA8F394251F3F4A006C6299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA8F393251F3F4A006C6299 /* Preview Assets.xcassets */; };
+		AEA8F3A6251F6CEE006C6299 /* TestColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8F3A5251F6CEE006C6299 /* TestColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AEA8F390251F3F4A006C6299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA8F393251F3F4A006C6299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEA8F395251F3F4A006C6299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA8F3A5251F6CEE006C6299 /* TestColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				AEA8F38C251F3F47006C6299 /* ScreenTesterApp.swift */,
 				AEA8F38E251F3F47006C6299 /* ContentView.swift */,
+				AEA8F3A5251F6CEE006C6299 /* TestColor.swift */,
 				AEA8F390251F3F4A006C6299 /* Assets.xcassets */,
 				AEA8F395251F3F4A006C6299 /* Info.plist */,
 				AEA8F392251F3F4A006C6299 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA8F38F251F3F47006C6299 /* ContentView.swift in Sources */,
+				AEA8F3A6251F6CEE006C6299 /* TestColor.swift in Sources */,
 				AEA8F38D251F3F47006C6299 /* ScreenTesterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
