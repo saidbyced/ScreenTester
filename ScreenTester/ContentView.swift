@@ -15,7 +15,7 @@ struct ContentView: View {
         TestColor(content.colorList[content.colorNumber]).view
             .ignoresSafeArea()
             .onTapGesture(count: 1, perform: {
-                nextColor()
+                content.cycleColor()
             })
             .onLongPressGesture {
                 showingColorMenu.toggle()
@@ -27,14 +27,6 @@ struct ContentView: View {
                     buttons: content.actionSheetButtons
                 )
             })
-    }
-    
-    func nextColor() {
-        if content.colorNumber >= content.colorList.count - 1 {
-            content.colorNumber = 0
-        } else {
-            content.colorNumber += 1
-        }
     }
 }
 

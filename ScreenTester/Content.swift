@@ -20,5 +20,13 @@ class Content: ObservableObject {
         }
         return buttons
     }
+    
+    func cycleColor() {
+        if colorNumber >= colorList.count - 1 {
+            colorNumber = 0
+        } else {
+            colorNumber += 1
+        }
+    }
 }
 
