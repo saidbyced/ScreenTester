@@ -24,6 +24,7 @@
 		AEA8F395251F3F4A006C6299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA8F3A5251F6CEE006C6299 /* TestColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColor.swift; sourceTree = "<group>"; };
 		AEA8F3A9251F7DD6006C6299 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		AEA8F3B4251F863D006C6299 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		AEA8F380251F3F47006C6299 = {
 			isa = PBXGroup;
 			children = (
+				AEA8F3B4251F863D006C6299 /* README.md */,
 				AEA8F38B251F3F47006C6299 /* ScreenTester */,
 				AEA8F38A251F3F47006C6299 /* Products */,
 			);
@@ -57,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				AEA8F38C251F3F47006C6299 /* ScreenTesterApp.swift */,
-				AEA8F38E251F3F47006C6299 /* ContentView.swift */,
-				AEA8F3A9251F7DD6006C6299 /* Content.swift */,
-				AEA8F3A5251F6CEE006C6299 /* TestColor.swift */,
+				AEA8F3B1251F85FD006C6299 /* Models */,
+				AEA8F3AD251F85E3006C6299 /* Views */,
+				AEA8F3AF251F85ED006C6299 /* ViewModels */,
 				AEA8F390251F3F4A006C6299 /* Assets.xcassets */,
 				AEA8F395251F3F4A006C6299 /* Info.plist */,
 				AEA8F392251F3F4A006C6299 /* Preview Content */,
@@ -73,6 +75,30 @@
 				AEA8F393251F3F4A006C6299 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEA8F3AD251F85E3006C6299 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8F38E251F3F47006C6299 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEA8F3AF251F85ED006C6299 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8F3A9251F7DD6006C6299 /* Content.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AEA8F3B1251F85FD006C6299 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8F3A5251F6CEE006C6299 /* TestColor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
