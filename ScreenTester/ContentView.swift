@@ -8,21 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var colorNumber = 0
     @State private var showingColorMenu = false
-    private var colorList = TestColor.Option.allCases
-    private var actionSheetButtons: [ActionSheet.Button] {
-        var buttons = [ActionSheet.Button]()
-        for color in colorList {
-            let colorName = color.rawValue.capitalized
-            guard let colorNumber = colorList.firstIndex(of: color) else { fatalError() }
-            buttons.append(.default(Text(colorName)) { self.colorNumber = colorNumber })
-        }
-        return buttons
-    }
+    @ObservedObject var content = Content()
     
     var body: some View {
-        TestColor(colorList[colorNumber]).view
+        TestColor(content.colorList[content.colorNumber]).view
             .ignoresSafeArea()
             .onTapGesture(count: 1, perform: {
                 nextColor()
@@ -34,16 +24,16 @@ struct ContentView: View {
                 ActionSheet(
                     title: Text("Colour options"),
                     message: Text("Choose colour to use for testing the screen"),
-                    buttons: actionSheetButtons
+                    buttons: content.actionSheetButtons
                 )
             })
     }
     
     func nextColor() {
-        if colorNumber >= colorList.count - 1 {
-            colorNumber = 0
+        if content.colorNumber >= content.colorList.count - 1 {
+            content.colorNumber = 0
         } else {
-            colorNumber += 1
+            content.colorNumber += 1
         }
     }
 }
